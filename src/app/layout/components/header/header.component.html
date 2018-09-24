@@ -1,0 +1,26 @@
+<div class="navb sticky">
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-success">Navbar</a>
+    <!-- 
+    <div>
+      <button class="btn btn-outline-success my-2 my-sm-0" [routerLink]="['/login']">Login</button>
+    </div>
+
+    <div>
+      <button class="btn btn-outline-success my-2 my-sm-0" (click)="logout()">Logout</button>
+    </div> -->
+
+    <div class="nav-item dropdown my-2 my-sm-0">
+      <a class="nav-link dropdown-toggle text-success" href="#" id="navbardrop" data-toggle="dropdown">
+        Dropdown link
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" [routerLink]="['/login']">SingIn</a>
+        <a class="dropdown-item" [routerLink]="['/administration']">Administration</a>
+        <a class="dropdown-item" [routerLink]="['/']">Home</a>
+        <a class="dropdown-item" href="#" (click)="logout()">Logout</a>
+      </div>
+    </div>
+
+  </nav>
+</div>
